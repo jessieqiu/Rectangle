@@ -1,0 +1,23 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	// for init; condition; post {}
+	for i := 0; i <= 10; i++ {
+		for j := 0; j < 3; j++ {
+
+			if i == 6 {
+				fmt.Printf("i is : %d\t and j is: %d\n", i, j)
+			} else if i == 9 {
+				fmt.Printf("Now, i + j is: ")
+				fmt.Println(i + j)
+			}
+
+		}
+	}
+}
+
+
