@@ -1,0 +1,24 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	myFirstGoFunction()
+	myFunctionWithParameters("Jessie", "Qiu")
+	test1 := myFunctionWithReturn("Jessie", "Qiu", "ice cream")
+	fmt.Println(test1)
+}
+
+func myFirstGoFunction() {
+	fmt.Println("hello world")
+}
+
+func myFunctionWithParameters(first string, last string) {
+	fmt.Println("Hello, my name is: ", first, last)
+}
+
+func myFunctionWithReturn(first string, last string, food string) string {
+	return fmt.Sprint(first, " ", last, " likes ", food)
+}
